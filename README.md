@@ -43,4 +43,12 @@ Implemented using **React Router DOM**:
 - `/login` → Login Page  
 
 ---
+## 📸 Screenshots
+
+### Signup Page
+![Signup Screenshot](./screenshots/signup.png)
+
+### Login Page
+![Login Screenshot](./screenshots/login.png)
+
 
