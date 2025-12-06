@@ -1,54 +1,70 @@
-# serviceApp
-# 🚀 QuickServe – Local Service Finder & Booking Platform
-## Milestone 1: Login, Signup & Role-Based Authentication
+# Getting Started with Create React App
 
-This repository contains **Milestone 1** of the QuickServe project — an authentication module built using **React JS + Bootstrap**.  
-It includes the Login page, Signup page, and role selection (Customer / Service Provider) as required in the project documentation.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## 📌 Project Overview
+In the project directory, you can run:
 
-QuickServe is a platform that helps customers find and book local service providers such as electricians, tutors, cleaners, plumbers, etc.  
-Milestone 1 focuses on:
+### `npm start`
 
-- User account creation  
-- Role selection  
-- Basic form validation  
-- Login interface and navigation  
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-This sets the foundation for upcoming modules like Listings, Booking Calendar, Ratings, and Admin Panel.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
----
+### `npm test`
 
-## 🧩 Features Implemented (Milestone 1)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### 🔐 Signup Page
-- Email input  
-- Password + Confirm password  
-- Role Selection:
-  - **Customer**
-  - **Service Provider**
-- Form validation  
-- Styled using **Bootstrap 5**
+### `npm run build`
 
-### 🔑 Login Page
-- Email & Password fields  
-- Styled using Bootstrap  
-- Link to signup page  
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### 🧭 Routing
-Implemented using **React Router DOM**:
-- `/signup` → Signup Page  
-- `/login` → Login Page  
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
-## 📸 Screenshots
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Signup Page
-![Signup Screenshot](./Screenshot/Screenshot (151).png)
+### `npm run eject`
 
-### Login Page
-![Login Screenshot](./screenshots/login.png)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
