@@ -99,7 +99,13 @@ const upcomingBookings = [
 
 export default function ProviderDashboard() {
   return (
-    <DashboardLayout navItems={providerNavItems} currentPath="/provider">
+    // <DashboardLayout navItems={providerNavItems} currentPath="/provider">
+    <DashboardLayout
+  title="Provider Panel"
+  navItems={providerNavItems}
+  currentPath="/provider"
+>
+
       <motion.div
         className="p-6 space-y-8"
         initial={{ opacity: 0, y: 20 }}

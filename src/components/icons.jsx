@@ -1,3 +1,55 @@
+// import {
+//   Home,
+//   Briefcase,
+//   Calendar,
+//   Star,
+//   Settings,
+//   User,
+//   Zap,
+//   DollarSign,
+//   Users,
+//   Plus,
+//   Edit,
+//   Trash2,
+//   Clock,
+//   Upload,
+//   ChevronLeft,
+//   ChevronRight,
+//   Check,
+//   Wrench,
+//   Sparkles,
+//   Brush,
+//   LogOut,   // ✅ ADD THIS
+// } from "lucide-react";
+
+// export const Icons = {
+//   Home,
+//   Briefcase,
+//   Calendar,
+//   Star,
+//   Settings,
+//   User,
+//   Zap,
+//   DollarSign,
+//   Users,
+//   Plus,
+//   Edit,
+//   Trash2,
+//   Clock,
+//   Upload,
+//   ChevronLeft,
+//   ChevronRight,
+//   Check,
+//   Wrench,
+//   Sparkles,
+//   Brush,
+//   LogOut,   // ✅ ADD THIS
+// };
+
+// export function getCategoryIcon(name) {
+//   return Icons[name] || Icons.Briefcase;
+// }
+
 import {
   Home,
   Briefcase,
@@ -19,7 +71,9 @@ import {
   Wrench,
   Sparkles,
   Brush,
-  LogOut,   // ✅ ADD THIS
+  LogOut,
+  Search,      // ✅ ADD
+  MapPin,      // ✅ ADD
 } from "lucide-react";
 
 export const Icons = {
@@ -43,7 +97,9 @@ export const Icons = {
   Wrench,
   Sparkles,
   Brush,
-  LogOut,   // ✅ ADD THIS
+  LogOut,
+  Search,
+  MapPin,
 };
 
 export function getCategoryIcon(name) {
