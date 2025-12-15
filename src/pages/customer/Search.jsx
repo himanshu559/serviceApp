@@ -94,7 +94,6 @@ export default function CustomerSearch() {
                     <Icons.Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
                     <Input
                       className="pl-14 h-11"
-                      placeholder="Service or provider"
                       value={query}
                       onChange={(e) => setQuery(e.target.value)}
                     />
@@ -108,7 +107,6 @@ export default function CustomerSearch() {
                     <Icons.MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
                     <Input
                       className="pl-14 h-11"
-                      placeholder="City or ZIP"
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
                     />

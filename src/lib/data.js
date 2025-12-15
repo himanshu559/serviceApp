@@ -1,15 +1,3 @@
-// ---- EXISTING (UNCHANGED) ----
-// export const serviceCategories = [
-//   { id: "plumbing", name: "Plumbing", icon: "Wrench" },
-//   { id: "electrical", name: "Electrical", icon: "Zap" },
-//   { id: "cleaning", name: "Cleaning", icon: "Sparkles" 
-// },
-//   { id: "tutoring", name: "Tutoring", icon: "GraduationCap" },
-//   { id: "carpentry", name: "Carpentry", icon: "Hammer" },
-//   { id: "painting", name: "Painting", icon: "Paintbrush" },
-//   { id: "gardening", name: "Gardening", icon: "Flower2" },
-//   { id: "moving", name: "Moving", icon: "Truck" },
-// ];
 export const serviceCategories = [
   { id: "plumbing", name: "Plumbing", icon: "Wrench" },
   { id: "electrical", name: "Electrical", icon: "Zap" },
@@ -27,7 +15,7 @@ export const providers = [
     price: "₹500/hr",
     distance: "2 km",
     bio: "Expert plumbing services with 10+ years experience",
-    image: "/placeholder.svg",
+    image: "/plumbing.jpg",
   },
   {
     id: "2",
@@ -38,7 +26,7 @@ export const providers = [
     price: "₹600/hr",
     distance: "3.5 km",
     bio: "Certified electrician for home & office",
-    image: "/placeholder.svg",
+    image: "/electrical.jpg",
   },
 ];
 

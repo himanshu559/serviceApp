@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+
 import DashboardLayout from "../../components/DashboardLayout";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
@@ -25,7 +26,7 @@ function StarRating({ rating }) {
         <Icons.Star
           key={star}
           className={cn(
-            "w-3 h-3 transition-colors",
+            "w-3 h-3",
             star <= rating
               ? "text-yellow-400 fill-yellow-400"
               : "text-muted-foreground"
@@ -62,7 +63,7 @@ export default function CustomerDashboard() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        {/* HERO */}
+        {/* ================= HERO ================= */}
         <div>
           <h1 className="text-3xl font-bold tracking-tight">
             Find Local Services
@@ -71,39 +72,35 @@ export default function CustomerDashboard() {
             Connect with trusted professionals near you
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 max-w-2xl">
-  {/* Service search */}
-  <div className="relative flex-1">
-              <Icons.Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+          {/* SEARCH BAR */}
+          <div className="flex flex-col sm:flex-row gap-4 mt-6 max-w-2xl">
+            {/* Service Search */}
+            <div className="relative flex-1">
+              <Icons.Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground pointer-events-none" />
               <Input
-                placeholder="What service do you need?"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="pl-10"
+                className="pl-14 h-11 rounded-lg leading-normal"
               />
             </div>
 
+            {/* Location */}
+            <div className="relative flex-1">
+              <Icons.MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground pointer-events-none" />
+              <Input
+                className="pl-14 h-11 rounded-lg leading-normal"
+              />
+            </div>
 
-  {/* Location */}
-  <div className="relative flex-1">
-  <Icons.MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground pointer-events-none" />
-  <Input
-    placeholder="New York, NY"
-    className="pl-14 h-11 rounded-lg"
-  />
-</div>
-
-
-  {/* Search button */}
-  <Button className="h-11 px-6 rounded-lg flex items-center gap-2">
-    <Icons.Search className="w-4 h-4 mr-2" />
-    Search
-  </Button>
-</div>
-
+            {/* Button */}
+            <Button className="h-11 px-6 rounded-lg flex items-center gap-2">
+              <Icons.Search className="w-4 h-4" />
+              Search
+            </Button>
+          </div>
         </div>
 
-        {/* CATEGORIES */}
+        {/* ================= CATEGORIES ================= */}
         <div>
           <h2 className="text-lg font-semibold mb-3">Browse by Category</h2>
           <div className="flex flex-wrap gap-3">
@@ -143,7 +140,7 @@ export default function CustomerDashboard() {
           </div>
         </div>
 
-        {/* VIEW TOGGLE */}
+        {/* ================= VIEW TOGGLE ================= */}
         <div className="flex justify-between items-center">
           <p className="text-muted-foreground">
             {filteredProviders.length} providers found
@@ -167,7 +164,7 @@ export default function CustomerDashboard() {
           </div>
         </div>
 
-        {/* PROVIDERS */}
+        {/* ================= PROVIDERS ================= */}
         <div
           className={cn(
             view === "grid"
@@ -184,7 +181,7 @@ export default function CustomerDashboard() {
               <Card className="overflow-hidden">
                 <div className="aspect-video bg-muted overflow-hidden">
                   <motion.img
-                    src={p.image || "/placeholder.svg"}
+                    src={p.image || "/plumbing.jpg"}
                     alt={p.name}
                     className="w-full h-full object-cover"
                     whileHover={{ scale: 1.08 }}

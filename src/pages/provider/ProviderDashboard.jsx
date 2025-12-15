@@ -73,7 +73,7 @@ import { motion } from "framer-motion";
 
 const stats = [
   { label: "Total Bookings", value: "47", icon: Icons.Calendar, color: "text-blue-500" },
-  { label: "Revenue", value: "₹2,450", icon: Icons.DollarSign, color: "text-green-500" },
+  { label: "Revenue", value: "₹2,450", icon: Icons.IndianRupee, color: "text-green-500" },
   { label: "Rating", value: "4.8", icon: Icons.Star, color: "text-yellow-500" },
   { label: "Customers", value: "32", icon: Icons.Users, color: "text-purple-500" },
 ];
@@ -137,9 +137,15 @@ export default function ProviderDashboard() {
                     <p className="text-sm text-muted-foreground">{s.label}</p>
                     <p className="text-2xl font-bold mt-1">{s.value}</p>
                   </div>
-                  <div className={`p-3 rounded-xl bg-muted ${s.color}`}>
+                  {/* <div className={`p-3 rounded-xl bg-muted ${s.color}`}>
                     <s.icon className="w-6 h-6" />
-                  </div>
+                  </div> */}
+                  {s.icon && (
+  <div className={`p-3 rounded-xl bg-muted ${s.color}`}>
+    <s.icon className="w-6 h-6" />
+  </div>
+)}
+
                 </CardContent>
               </Card>
             </motion.div>
